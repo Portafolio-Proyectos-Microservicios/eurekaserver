@@ -3,9 +3,9 @@ server:
 
 spring:
   application:
-  name: eurekaserver
+    name: eurekaserver  # <-- Corrige la indentación aquí
 
 eureka:
   client:
-  register-with-eureka: false
-  fetch-registry: false
+    register-with-eureka: false  # <-- Corrige la indentación aquí
+    fetch-registry: false  # <-- Corrige la indentación aquí
