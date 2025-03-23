@@ -2,10 +2,13 @@ server:
   port: 8761
 
 spring:
-  application:
-    name: eurekaserver
+ application:
+  name: eurekaserver
+ banner:
+  location: classpath:banner/banner.txt
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+# Config Server
+ config:
+  import: "configserver:"
+ cloud:
+ cloud.config.uri: http://localhost:8888
